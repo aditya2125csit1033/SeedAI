@@ -1,0 +1,109 @@
+import React from 'react';
+import './App.css';
+import Bg from './Bg.png';
+import BgVideo2 from './Bg2.mp4';
+import { useState } from 'react';
+import AnimatedTextBox from './AnimatedTextBox';
+import Arrow from './Arrow.png';
+function App() {
+  const[Username, setUsername] = useState("");
+  const[Email, setEmail] = useState("");
+  const[Password, setPassword] = useState("");
+
+
+
+  const [DialogClose, setDialogClose] = useState(true);
+  const [SignOpen, setSignOpen] = useState(false);
+  const handleDialog = () => {
+    setDialogClose((prevState) => !prevState);
+  }
+  const signOn = () => {
+    setSignOpen((prevState) => !prevState);
+  }
+  return (
+    <div className="App">
+
+      <div className="video-background">
+        {DialogClose &&
+          <img src={Bg} alt="Smiley face" className="background-video" />
+
+        }
+
+        {!DialogClose &&
+          <video autoPlay loop muted playsInline className="background-video1">
+            <source src={BgVideo2} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+
+        }
+        {DialogClose &&
+          <div className="content">
+            <AnimatedTextBox />
+          </div>
+        }
+        {DialogClose && <button className="buts" type="button" onClick={handleDialog}>Login / Signup</button>
+        }
+        {!DialogClose && !SignOpen && <div className="DialogBox">
+          <img src={Arrow} alt="Smiley face" className="Arrowf" onClick={handleDialog} />
+
+          <h1>Login</h1>
+
+          <div className='Email'>
+            <label for="email">Email:    </label>
+            <input type="email" id="email" placeholder="Enter your email" />
+          </div>
+
+          <div className='Password'>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" />
+          </div>
+          <div className='Buttons'>
+
+            <button class="Login">Login</button>
+            <button class="ForgotPass" >Forgot Password?</button>
+            <button class="Signup" onClick={signOn}>Signup</button>
+          </div>
+          {/* onClick={handleForgot} */}
+        </div>
+        }
+        {!DialogClose && SignOpen && <div className="DialogBox">
+          <img src={Arrow} alt="Smiley face" className="Arrowf" onClick={handleDialog} />
+
+          <h1>Signup</h1>
+
+          <div className='Username'>
+            <label for="username">Username:    </label>
+            <input type="text" id="Username" placeholder="Enter your username" />
+          </div>
+
+          <div className='Email'>
+            <label for="email">Email:    </label>
+            <input type="email" id="email" placeholder="Enter your email" />
+          </div>
+
+          <div className='Password'>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" />
+          </div>
+          <div className='Buttons'>
+
+            <button class="Register">Register</button>
+            <button class="Login" onClick={signOn}>Login</button>
+          </div>
+
+        </div>
+        }
+      </div>
+
+
+    </div>
+  );
+}
+
+export default App;
+
+
+

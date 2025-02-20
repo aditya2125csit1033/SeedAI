@@ -1,0 +1,229 @@
+.video-background {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+}
+body{
+  background-color: black;
+}
+
+.background-video {
+  position: absolute;
+  /* filter: brightness(70%); */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  background-size: cover;
+
+}
+.background-video1 {
+  position: absolute;
+  filter: blur(20px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  background-size: cover;
+
+}
+.content {
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.buts{
+  position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+bottom: 20vh;
+padding: 0px;
+height: 6vw;
+width: 14vw;
+background: none;
+font-family: Arial, Helvetica, sans-serif;
+border-radius: 40px;
+color: white;
+font-size: 1.4vw;
+}
+
+.buts:hover{
+  position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+bottom: 20vh;
+padding: 0px;
+height: 6vw;
+width: 14vw;
+background: none;
+font-family: Arial, Helvetica, sans-serif;
+border-radius: 40px;
+color: white;
+font-size: 1.5vw;
+font-weight: bolder;
+
+}
+.DialogBox{
+  opacity: 0.8;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 22vh;
+  bottom: 22vh;
+  left: 20vw;
+  right: 20vw;
+  background-color: black;
+  border-radius: 5vw;
+  display: flex;
+  flex-direction: column;
+  border: solid whitesmoke 3.8px;
+  justify-content: center;
+  /* border: solid white 2px; */
+  box-shadow: 10px black;
+  align-items: center;
+  color: white;
+}
+
+.DialogBox input{
+  color: white;
+  height: 5vh;
+  width: 15vw;
+  border-radius: 10px;
+  border: 2px solid white;
+  background: none;
+}
+.DialogBox h1{
+  margin: 0;
+  position: absolute;
+  top: 3vh;
+  font-size: 4vw;
+
+}
+.Buttons{
+  width: 100%;
+  position: absolute;
+  bottom: 5vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Login{
+ 
+ border: 2px;
+  padding: 9px;
+  filter: invert(1);
+  border-radius: 14px;
+  font-size: 3vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ForgotPass{
+ background: none;
+  border: 2px;
+   padding: 9px;
+   filter: invert(1);
+   border-radius: 14px;
+   font-size: 3vh;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+.Signup{
+  
+  padding: 9px;
+  filter: invert(1);
+  border: 2px;
+  border-radius: 14px;
+  font-size: 3vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Login:hover{
+  font-weight: bolder;
+  filter: invert(0);
+  
+}
+.Signup:hover{
+  filter: invert(0);
+  font-weight: bolder;
+  
+}
+.Email label{
+  width: 30px;
+  
+  font-size: 2vh;
+
+}
+
+.Username label{
+  width: 30px;
+  
+  font-size: 2vh;
+
+}
+
+.Password label{
+  width: 30px;
+  font-size: 2vh;
+}
+.Email {
+  display: flex;
+  width: 21vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.Username {
+  display: flex;
+  width: 21vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.Password{
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  width: 21vw;
+  position: relative;
+  margin: 20px;
+}
+
+.Arrowf{
+filter: invert(1);
+height: 45px;
+width: 45px;
+position: absolute;
+top: 25px;
+right: 80px;
+}
+.Register{
+  padding: 9px;
+  filter: invert(1);
+  border: 2px;
+  border-radius: 14px;
+  font-size: 3vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Register:hover{
+  font-weight: bolder;
+  filter: invert(0);
+  
+}

@@ -1,0 +1,121 @@
+body {
+    color: white;
+}
+.response{
+    width: 100%;
+}
+.Left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: absolute;
+    background-color: black;
+    /* rgb(232, 234, 237) */
+    top: 0.8vw;
+    bottom: 0.8vw;
+    left: 0.8vw;
+    width: 37vw;
+    border-radius: 1vw;
+ 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.upload-form h1 {
+    font-weight: bolder;
+    font-size: 70px;
+    
+    align-self: flex-start; 
+}
+
+
+.upload-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5vw;
+    margin-top: 1vw; 
+    color: #ffffff;
+}
+
+
+.upload-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.upload-form input {
+    width: 100%;
+    padding: 0.8vw;
+    margin-bottom: 1vw;
+    border-radius: 0.5vw;
+    border: 1px solid #dedede;
+    font-size: 1rem;
+    transition: 0.3s;
+    margin-top: 0.5vw;
+}
+
+.upload-form input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+
+.upload-form button {
+    border: 2px;
+    padding: 9px;
+    filter: invert(1);
+    border-radius: 14px;
+    font-size: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.upload-form button:hover {
+    font-weight: bolder;
+  filter: invert(0);
+}
+
+.upload-form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.Right {
+    position: absolute;
+    background-color: #141414;
+    top: 0.8vw;
+    bottom: 0.8vw;
+    right: 0.8vw;
+    width: 61vw;
+    border-radius: 1vw;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-size: contain;
+}
+.prediction-result{
+    display: flex;
+    flex-direction: column;
+
+}
+.prediction-result h1{
+    margin: 0;
+    align-self: flex-start;
+}
