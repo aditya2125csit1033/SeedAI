@@ -48,11 +48,11 @@ cd SeedAI
 > Make sure you have Python ≥3.8 and pip installed.
 
 
-
+```bash
 cd Model
 pip install -r requirements.txt  # create this if missing
 python app.py
-
+```
 Model will serve predictions at http://localhost:5000/
 
 
@@ -64,11 +64,11 @@ Model will serve predictions at http://localhost:5000/
 > Requires Node.js and MongoDB running locally or via Atlas.
 
 
-
+```bash
 cd MongoDB
 npm install
 npm start
-
+```
 Runs Express backend for user/data handling at http://localhost:4000/
 
 
@@ -80,11 +80,11 @@ Runs Express backend for user/data handling at http://localhost:4000/
 > Make sure Node.js is installed.
 
 
-
+```bash
 cd ui
 npm install
 npm start
-
+```
 Open the frontend at http://localhost:3000/
 
 
