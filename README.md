@@ -39,7 +39,7 @@ SeedAI/ │ ├── Model/          # Python backend and trained models │   
 ```bash
 git clone https://github.com/aditya2125csit1033/SeedAI.git
 cd SeedAI
-
+```
 
 ---
 
